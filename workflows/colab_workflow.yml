@@ -17,5 +17,5 @@ jobs:
 
       - name: Run Colab Notebook
         run: |
-          google colab execute "" 
+          google colab execute "KWANZA_TUKULE_CASE_STUDY.ipynb" 
 
