@@ -1,21 +1,43 @@
-name: Run Colab Notebook
+name: Run Colab Notebook Every 5 Hours
 
 on:
   schedule:
-    - cron: "*/300 * * * *"  # Run every 5 hours (300 minutes)
+    - cron: "0 */5 * * *"  # Runs every 5 hours
 
 jobs:
-  run_colab:
+  run_colab_notebook:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout the repository
+      uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: |
-          pip install google-api-python-client
+    - name: Set up Python environment
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
 
-      - name: Run Colab Notebook
-        run: |
-          google colab execute "KWANZA_TUKULE_CASE_STUDY.ipynb" 
+    - name: Install necessary packages
+      run: |
+        pip install google-colab gdown google-auth google-auth-oauthlib google-auth-httplib2 jupyter nbconvert
 
+    - name: Set up Google credentials
+      run: |
+        echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > $HOME/credentials.json
+        export GOOGLE_APPLICATION_CREDENTIALS=$HOME/credentials.json
+
+    - name: Run the Colab notebook from GitHub
+      run: |
+        # Ensure that the necessary libraries are installed
+        python -m pip install --upgrade pip
+
+        # Run the notebook using nbconvert
+        jupyter nbconvert --execute --inplace --allow-errors --to notebook test_colab.ipynb
+
+    - name: Commit and push the executed notebook (if you want to save the executed notebook back to GitHub)
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add KWANZA_TUKULE_CASE_STUDY.ipynb
+        git commit -m "Run notebook and update output"
+        git push
