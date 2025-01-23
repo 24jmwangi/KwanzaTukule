@@ -1,1 +1,21 @@
-workflo
+name: Run Colab Notebook
+
+on:
+  schedule:
+    - cron: "*/300 * * * *"  # Run every 5 hours (300 minutes)
+
+jobs:
+  run_colab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: |
+          pip install google-api-python-client
+
+      - name: Run Colab Notebook
+        run: |
+          google colab execute "" 
+
