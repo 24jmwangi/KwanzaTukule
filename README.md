@@ -55,10 +55,9 @@ The core logic of the pipeline is implemented in the following Jupyter Notebook:
 
 This notebook contains the code for data ingestion, cleaning, transformation, and preparation for visualization.
 
-
 ## LOOKER DASHBOARD
+https://lookerstudio.google.com/s/ou_fip2m4aY
 
-https://lookerstudio.google.com/embed/reporting/8cd9c10d-4761-4430-bcc7-6c185091edd7/page/y8tfE
 ---
 
 ## GitHub Actions Workflow
