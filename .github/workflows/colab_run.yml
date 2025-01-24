@@ -27,10 +27,11 @@ jobs:
         pip install -r requirements.txt
 
     - name: Set up Google credentials
+      env:
+        GOOGLE_APP_CREDENTIALS: ${{SECRETS.GOOGLE_APP_CREDENTIALS}}
       run: |
         # Write the credentials JSON from the secret to a file
-        echo "${{secrets.GOOGLE_APP_CREDENTIALS}}" > $HOME/credentials.json
-        export GOOGLE_APP_CREDENTIALS=$HOME/credentials.json
+        echo "$GOOGLE_APP_CREDENTIALS" > credentials.json
 
     - name: Run the Colab notebook
       run: |
