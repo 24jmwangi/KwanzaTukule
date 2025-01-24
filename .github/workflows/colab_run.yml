@@ -21,7 +21,10 @@ jobs:
     - name: Install necessary packages
       run: |
         pip install gdown google-auth google-auth-oauthlib google-auth-httplib2 jupyter nbconvert gspread
-
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
     - name: Set up Google credentials
       env:
         GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
