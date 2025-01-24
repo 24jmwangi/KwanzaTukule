@@ -13,4 +13,4 @@ plotly
 pandas-gbq
 scikit-learn
 statsmodels
-
+ipywidgets
