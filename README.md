@@ -58,7 +58,7 @@ This notebook contains the code for data ingestion, cleaning, transformation, an
 
 ## LOOKER DASHBOARD
 
-<iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/8cd9c10d-4761-4430-bcc7-6c185091edd7/page/y8tfE" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+https://lookerstudio.google.com/embed/reporting/8cd9c10d-4761-4430-bcc7-6c185091edd7/page/y8tfE
 ---
 
 ## GitHub Actions Workflow
