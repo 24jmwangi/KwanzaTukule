@@ -1,5 +1,6 @@
 oauth2client
 pandas
+google-cloud
 gspread
 oauth
 seaborn
