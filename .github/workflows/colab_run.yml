@@ -30,8 +30,8 @@ jobs:
         GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
       run: |
         # Write the credentials JSON from the secret to a file
-        # echo "${GOOGLE_APPLICATION_CREDENTIALS}" > $HOME/credentials.json
-        # export GOOGLE_APPLICATION_CREDENTIALS=$HOME/credentials.json
+        echo "${GOOGLE_APPLICATION_CREDENTIALS}" > $HOME/credentials.json
+        export GOOGLE_APPLICATION_CREDENTIALS=$HOME/credentials.json
 
     - name: Run the Colab notebook
       run: |
