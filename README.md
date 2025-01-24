@@ -130,19 +130,3 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-
-## Contact
-
-If you have any questions or feedback, feel free to reach out:
-
-- **Your Name**: [Your Email](mailto:your.email@example.com)
-- **GitHub**: [24jmwangi](https://github.com/24jmwangi)
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-
----
-
-*(Customize this template further if needed. Add or remove sections as necessary.)*
-
----
-
-This `README.md` file provides a clear overview of your project, its architecture, and how to use it. It also includes links to the notebook, architecture diagram, and GitHub Actions workflow for easy navigation. Let me know if you need further adjustments!
