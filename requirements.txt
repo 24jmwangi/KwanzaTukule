@@ -2,3 +2,5 @@ pandas
 gspread
 oauth
 seaborn
+numpy
+dash
