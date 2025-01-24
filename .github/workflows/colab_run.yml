@@ -35,7 +35,7 @@ jobs:
     - name: Debug Google credentials
       run: |
         echo "Checking if GOOGLE_APPLICATION_CREDENTIALS is set"
-        echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" | head -n 5
+        echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > cred.json
 
     - name: Run the Colab notebook
       run: |
