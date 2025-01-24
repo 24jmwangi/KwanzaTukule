@@ -13,7 +13,7 @@ This repository contains the analytics pipeline for the **Kwanza Tukule** study 
 
 1. [Overview](#overview)
 2. [Architecture](#architecture)
-3. [Notebook](#notebook)
+3. [Notebook & Dashboard](#notebook)
 4. [GitHub Actions Workflow](#github-actions-workflow)
 5. [Installation](#installation)
 6. [Usage](#usage)
@@ -55,6 +55,10 @@ The core logic of the pipeline is implemented in the following Jupyter Notebook:
 
 This notebook contains the code for data ingestion, cleaning, transformation, and preparation for visualization.
 
+
+## LOOKER DASHBOARD
+
+<iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/8cd9c10d-4761-4430-bcc7-6c185091edd7/page/y8tfE" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 ---
 
 ## GitHub Actions Workflow
