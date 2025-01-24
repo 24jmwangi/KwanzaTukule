@@ -1,6 +1,7 @@
 oauth2client
 pandas
 google-cloud
+tabulate
 google-cloud-bigquery
 gspread
 oauth
