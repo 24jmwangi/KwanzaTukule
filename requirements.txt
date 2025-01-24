@@ -10,4 +10,7 @@ numpy
 dash
 jupyter-dash
 plotly
+pandas-gbq
+scikit-learn
+statsmodels
 
