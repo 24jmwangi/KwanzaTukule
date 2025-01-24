@@ -1,8 +1,10 @@
 oauth2client
 pandas
 google-cloud
+google-cloud-bigquery
 gspread
 oauth
 seaborn
 numpy
 dash
+
