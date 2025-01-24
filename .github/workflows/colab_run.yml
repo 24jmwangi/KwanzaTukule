@@ -20,7 +20,7 @@ jobs:
 
     - name: Install necessary packages
       run: |
-        pip install google-colab gdown google-auth google-auth-oauthlib google-auth-httplib2 jupyter nbconvert
+        pip install gdown google-auth google-auth-oauthlib google-auth-httplib2 jupyter nbconvert gspread
 
     - name: Set up Google credentials
       env:
