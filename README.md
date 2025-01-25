@@ -41,7 +41,7 @@ Below is the architecture of the analytics pipeline:
 ### Key Components:
 1. **Data Source**: Google Sheets.
 2. **Ingestion**: Data is pulled using the Google Sheets API.
-3. **Cleaning and Transformation**: Performed in Google Colab.
+3. **Cleaning and Transformation, Analysis**: Performed in Google Colab.
 4. **Visualization**: Data is visualized in Looker Studio.
 5. **Automation**: GitHub Actions triggers the pipeline every 5 hours.
 
@@ -49,11 +49,11 @@ Below is the architecture of the analytics pipeline:
 
 ## Notebook
 
-The core logic of the pipeline is implemented in the following Jupyter Notebook:
+The core logic of the Analysis is implemented in the following Jupyter Notebook:
 
 📒 [Kwanza Tukule Case Study Notebook](https://github.com/24jmwangi/KwanzaTukule/blob/main/KWANZA_TUKULE_CASE_STUDY.ipynb)
 
-This notebook contains the code for data ingestion, cleaning, transformation, and preparation for visualization.
+This notebook contains the code for data ingestion, cleaning, transformation,Analysis and preparation for visualization.
 
 ## LOOKER DASHBOARD
 https://lookerstudio.google.com/s/ou_fip2m4aY
@@ -66,11 +66,11 @@ The pipeline is automated using GitHub Actions. The workflow is defined in the f
 
 📄 [GitHub Actions Workflow](.github/workflows/colab_run.yml)
 
-The workflow runs every 5 hours and executes the steps defined in the notebook.
+The workflow runs every 5 hours and executes the notebook
 
 ---
 
-## Installation
+## Installation (running locally) - (Recommended- run in google colab or using actions) 
 
 To set up this project locally, follow these steps:
 
@@ -98,7 +98,7 @@ To set up this project locally, follow these steps:
 To use the pipeline:
 1. Ensure your Google Sheets API credentials are set up.
 2. Update the notebook with your Google Sheet ID and range.
-3. Run the notebook to ingest, clean, and transform the data.
+3. Run the notebook to ingest, clean,transform, Analyze the data.
 4. Visualize the data in Looker Studio.
 
 For automation, the GitHub Actions workflow will handle the execution every 5 hours.
