@@ -5,7 +5,7 @@
 
 [![Run Analytics pipeline Every 5 Hours](https://github.com/24jmwangi/KwanzaTukule/actions/workflows/colab_run.yml/badge.svg)](https://github.com/24jmwangi/KwanzaTukule/actions/workflows/colab_run.yml)
 
-This repository contains the analytics pipeline for the **Kwanza Tukule** study case project. The pipeline is designed to ingest, clean, transform, and visualize data from Google Sheets using Google Colab and Looker Studio. The pipeline is automated using **GitHub Actions**, which runs every 5 hours.
+This repository contains the analytics pipeline for the **Kwanza Tukule** study case project. The pipeline is designed to ingest, clean, transform,Analyze and visualize data from Google Sheets using Google Colab and Looker Studio. The pipeline is automated using **GitHub Actions**, which runs every 5 hours.
 
 ---
 
@@ -25,7 +25,7 @@ This repository contains the analytics pipeline for the **Kwanza Tukule** study 
 
 The **Kwanza Tukule Analytics Pipeline** automates the process of:
 - **Data Ingestion**: Pulling data from Google Sheets using the Google Sheets API.
-- **Data Cleaning and Transformation**: Processing the data in Google Colab.
+- **Data Cleaning ,Transformation, Analysis**: Processing the data in Google Colab.
 - **Data Visualization**: Visualizing the transformed data in Looker Studio.
 
 The pipeline is scheduled to run every 5 hours using GitHub Actions.
