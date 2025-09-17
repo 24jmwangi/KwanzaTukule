@@ -1,5 +1,5 @@
 
-# Kwanza Tukule Study Case Analytics Pipeline
+# Kwanza Tukule Case Study Analytics Pipeline
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)  
 
