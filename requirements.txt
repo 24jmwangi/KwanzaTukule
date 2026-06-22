@@ -13,5 +13,5 @@ plotly
 pandas-gbq
 scikit-learn
 statsmodels
-mistune=2.0.4
+mistune==2.0.4
 ipywidgets
